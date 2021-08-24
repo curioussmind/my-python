@@ -6,3 +6,11 @@
 
 num_letters = len("four")
 print(num_letters)
+
+# FUNCTIONS CAN HAVE SIDE EFFECTS
+# --> when a function changes or affects something external
+# example print()
+# When you call print() with a string argument, the string is displayed in the Python shell as text. But print() doesn’t return any text as a value.
+# To see what print() returns, you can assign the return value of print() to a variable:
+return_value = print("What do I return?") # --> what do I return?
+return_value # --> print nothing
