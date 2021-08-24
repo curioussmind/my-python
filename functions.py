@@ -1,0 +1,1 @@
+# FUNCTIONS ARE VALUE and can be assigned to variable
