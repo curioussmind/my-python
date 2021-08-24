@@ -14,3 +14,7 @@ print(num_letters)
 # To see what print() returns, you can assign the return value of print() to a variable:
 return_value = print("What do I return?") # --> what do I return?
 return_value # --> print nothing
+
+# When you call print(), the text that gets displayed is not the return value. It is a side effect of print().
+
+
