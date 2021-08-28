@@ -18,3 +18,8 @@ num = float(input("Enter a positive number: "))
 while num <= 0:
     print("That's not a positive number!")
     num = float(input("Enter a positive number: "))
+
+# one line while loops
+print("one line while loops:")
+n = 5
+while n > 0: n -= 1; print(n)
