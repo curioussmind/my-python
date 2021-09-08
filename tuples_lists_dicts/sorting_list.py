@@ -17,5 +17,5 @@ def get_second_element(item):
     return item[1]
 
 items = [(4, 1), (1, 2), (-9, 0)]
-items.sort(key=get_second_element)
+items.sort(key=get_second_element) # keep in mind that function we pass to key must accept only single arg
 print(items)
