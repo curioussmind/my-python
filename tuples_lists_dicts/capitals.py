@@ -13,3 +13,14 @@ capital_dict = {
     'Georgia': 'Atlanta',
 }
 
+state, capital = random.choice(list(capital_dict.items()))
+
+while True:
+    guess = input(f"What is the capital of '{state}'?").lower()
+    if guess == 'exit':
+        print(f"The capital of '{state}' is '{capital}'.")
+        print("Goodbye")
+        break
+    elif guess == capital.lower():
+        print("Correct! Nice job.")
+        break
