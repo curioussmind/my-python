@@ -1,8 +1,12 @@
-from modules_packages.packages_example.package_exercises.helpers.math import area
-from modules_packages.packages_example.package_exercises.helpers.string import shout
-import helpers.string
-import helpers.math
+from helpers import math as mt
+from helpers import string as st
 
 
-area(5, 8)
-shout()
+length = 5
+width = 8
+count_area = mt.area(length, width)
+hey = f"the area of a {length}-by-{width} is {count_area}"
+message= st.shout(hey)
+print(message)
+
+
