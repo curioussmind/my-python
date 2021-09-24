@@ -8,5 +8,3 @@ count_area = mt.area(length, width)
 hey = f"the area of a {length}-by-{width} is {count_area}"
 message= st.shout(hey)
 print(message)
-
-
