@@ -9,8 +9,8 @@ class Car:
         return f"The {self.color} car has {self.mileage:,} miles."
 
     def drive(self, number):
-        total = number + self.mileage
-        return total
+        self.mileage = self.mileage + number # add given number to self.mileage attributes
+        
 
 # car_blue = Car("blue", 20000)
 # print(car_blue)
@@ -18,8 +18,9 @@ class Car:
 # car_red = Car("red", 30000)
 # print(car_red)
 
-green_car = Car("green", 0)
-green_car.drive(100)
+green_car = Car('green', 0)
 print(green_car)
+
+green_car.drive(100)
 print(green_car.mileage)
 
