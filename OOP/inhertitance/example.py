@@ -11,18 +11,24 @@ class Dog(object):
         return f"{self.name} is {self.age} years old."
     
     def speak(self, sound):
-        return f"{self.name} says {sound}"
+        #return f"{self.name} says {sound}"
+        return f"{self.name} barks: {sound}" # change 
 
 # CREATE THREE CHILD CLASSES FROM THE ABOVE CLASS or IN OTHER WORDS INHERITING FROM ABOVE CLASS
 class JackRusselTerrier(Dog):
     def speak(self, sound="Arf"): # override the instance method from parent class, set the default sound with "Arf"
-        return f"{self.name} says {sound}."
+        #return f"{self.name} says {sound}."
+        return super().speak(sound) # 
 
 class Daschshund(Dog):
     pass
 
 class Bulldog(Dog):
     pass
+
+class GoldenRetriever(Dog):
+    def speak(self, sound="Bark"):
+        return super().speak(sound)
 
 miles = JackRusselTerrier("Miles", 4)
 buddy = Daschshund("Buddy", 9)
