@@ -18,8 +18,8 @@ class Dog:
         return f"{self.name} says {sound}."
     
 
-#miles = Dog("Miles", 4) # creating object
-#print(miles)
+miles = Dog("Miles", 4, "black") # creating object
+print(miles)
 
 #sound_woof = miles.speak("Woof Woof") # calling instance method
 #print(sound_woof)
