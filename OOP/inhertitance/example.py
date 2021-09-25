@@ -15,7 +15,8 @@ class Dog(object):
 
 # CREATE THREE CHILD CLASSES FROM THE ABOVE CLASS or IN OTHER WORDS INHERITING FROM ABOVE CLASS
 class JackRusselTerrier(Dog):
-    pass
+    def speak(self, sound="Arf"): # override the instance method from parent class, set the default sound with "Arf"
+        return f"{self.name} says {sound}."
 
 class Daschshund(Dog):
     pass
@@ -36,3 +37,6 @@ print(jim.speak("woof"))
 print(type(jack)) # check which class this obj belonngs to
 print(isinstance(miles, Dog)) # check if miles is an instance of Dog class
 
+# referring ti class JackRusselTerrier(Dog) on line 17
+yoko = JackRusselTerrier("Yoko", 4)
+print(yoko.speak()) # autommatically sound arf based on the JackRusselTerrier(Dog) chuld class :
