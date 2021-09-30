@@ -8,11 +8,12 @@ class Animal:
    #  def __str__(self):
         #pass # to print animal informations
     def __str__(self):
-        return f"There are {self.total} {self.name} in this farm."
-    
+        if self.total > 1:
+            return f"There are {self.total} {self.name.capitalize()}s in this farm."
+        else:
+            return f"There are {self.total} {self.name.capitalize()} in this farm."
+
     def total (self, total):
-        if total > 1:
-            self.name = self.name + 's'
         return total
     
     def speak(self, sound):
@@ -29,9 +30,27 @@ class Mammals(Animal):
     def legs_number(self, legs=4):
         return legs
     
-    def total(self, total=20):
+    def total(self, total):
         return total
 
-cow = Mammals('cow', 20)
+class Poultry(Animal):
+    def legs_number(self, legs):
+        return legs
+    
+    def total(self, total):
+        return total
 
+class Insects(Animal):
+    def legs_number(self, legs):
+        return legs
+    
+    def total(self, total):
+        return total
+
+
+cow = Mammals('cow', 30)
 print(cow)
+
+chicken = Poultry('chicken', 500)
+print(chicken)
+
