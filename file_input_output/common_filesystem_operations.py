@@ -18,3 +18,8 @@ nested_dir.mkdir(parents=True) # since folder a is not exist yet, we set parent 
 nested_dir.mkdir(parents=True, exist_ok=True) # by putting all if these together, no error will be raised
 
 
+# WHAT IS THE PATH WILL BE INPUT BY THE USER?
+
+file_path = new_dir / 'file1.txt' # file doesn't exist yet, so we can use the Path.touch() method
+file_path.touch()
+
